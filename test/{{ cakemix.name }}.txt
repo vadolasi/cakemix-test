@@ -1,1 +1,1 @@
-Hello {{ cakemix.name }} {% id cakemix.last_name %}{{ cakemix.last_name }}{% endif %}!
+Hello {{ cakemix.name }}{% if cakemix.last_name %} {{ cakemix.last_name }}{% endif %}!
