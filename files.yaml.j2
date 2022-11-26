@@ -2,7 +2,7 @@
   from: hello_{{ cakemix.name }}.txt
   to: hello_{{ cakemix.name }}_1.txt
 
-{% for i in range(2, cakemix.many) %}
+{% for i in range(2, cakemix.quantity|int) %}
 - command: copy
   from: hello_{{ cakemix.name }}_1.txt
   to: hello_{{ cakemix.name }}_{{ i }}.txt
