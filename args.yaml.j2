@@ -1,11 +1,4 @@
-- name: name
-  message: What is your name?
-- name: ask_last_name
-  message: Ask last name?
-  type: confirm
-
----
-{% if cakemix.ask_last_name %}
-- name: last_name
-  message: What is your last name?
-{% endif %}
+- name: quantity
+  message: How many generate files?
+  type: text
+  default: 1

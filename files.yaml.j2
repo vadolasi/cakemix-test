@@ -1,0 +1,9 @@
+- command: move
+  from: hello.txt
+  to: hello_1.txt
+
+{% for i in range(2, cakemix.quantity|int + 1) %}
+- command: copy
+  from: hello_1.txt
+  to: hello_{{ i }}.txt
+{% endfor %}
