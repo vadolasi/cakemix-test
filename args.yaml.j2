@@ -1,12 +1,18 @@
 - name: name
-  message: "What is your name?"
+  message: What is your name?
+  default: John Doe
 - name: ask_last_name
-  message: "Ask last name?"
+  message: Ask last name?
   type: confirm
   default: false
 
 ---
-{% if ask_last_name %}
+{% if cakemix.ask_last_name %}
 - name: last_name
-  message: "What is your last name?"
+  message: What is your last name?
 {% endif %}
+
+- name: quantity
+  message: How many generate files?
+  type: number
+  default: 1
